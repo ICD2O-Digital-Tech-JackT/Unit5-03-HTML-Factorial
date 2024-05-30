@@ -1,5 +1,17 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
-//
-// Created by: Mr. Coxall
-// Created on: Sep 2020
-// This file contains the JS functions for index.html
+function Submit(){
+  // Making variables
+  let num = document.getElementById('num').value;
+  let result = document.getElementById('Result');
+  let current = num
+  //factorial loop
+  do {
+    //incrimenting down
+    current-=1
+    //checking if we can multiply
+    if (current>0){
+      num*=current //multiplying num
+    }
+  } while(current>0)
+  //set display
+  result.innerHTML = num
+}
